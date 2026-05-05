@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-laravel"
+version = "0.1.0"
+description = "Servidor MCP para automatizar a criação de estruturas no Laravel"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "mcp",
+]
+
+[project.scripts]
+mcp-laravel = "mcp_laravel.app:main"
